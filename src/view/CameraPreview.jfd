@@ -1,0 +1,901 @@
+JFDML JFormDesigner: "5.1.3.0.158" Java: "1.8.0_51" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class java.awt.GridLayout ) ) {
+			name: "this"
+			"$sizePolicy": 1
+			"$locationPolicy": 0
+			"minimumSize": new java.awt.Dimension( 800, 600 )
+			add( new FormContainer( "javax.swing.JSplitPane", new FormLayoutManager( class javax.swing.JSplitPane ) ) {
+				name: "mainSplitPane"
+				"dividerSize": 0
+				"dividerLocation": 250
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class javax.swing.BoxLayout ) ) {
+					name: "leftSplitPane"
+					"background": new java.awt.Color( 214, 217, 223, 255 )
+					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+						name: "panel5"
+						"background": new java.awt.Color( 214, 217, 223, 255 )
+						add( new FormComponent( "com.jformdesigner.designer.wrapper.JGoodiesFormsLabel" ) {
+							name: "label1"
+							"textWithMnemonic": "Wybierz projekt"
+						}, new FormLayoutConstraints( class java.lang.String ) {
+							"value": "First"
+						} )
+						add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+							name: "scrollPane3"
+							add( new FormComponent( "javax.swing.JTree" ) {
+								name: "projectsTree"
+								"model": new javax.swing.tree.DefaultTreeModel( new javax.swing.tree.DefaultMutableTreeNode {
+									userObject: "(Projekty)"
+									add( new javax.swing.tree.DefaultMutableTreeNode {
+										userObject: "projekt 1"
+										add( new javax.swing.tree.DefaultMutableTreeNode {
+											userObject: "nagranie 1"
+										} )
+										add( new javax.swing.tree.DefaultMutableTreeNode {
+											userObject: "nagranie 2"
+										} )
+										add( new javax.swing.tree.DefaultMutableTreeNode {
+											userObject: "nagranie 3"
+										} )
+									} )
+									add( new javax.swing.tree.DefaultMutableTreeNode {
+										userObject: "projekt 2"
+										add( new javax.swing.tree.DefaultMutableTreeNode {
+											userObject: "nagranie 1"
+										} )
+										add( new javax.swing.tree.DefaultMutableTreeNode {
+											userObject: "nagranie 2"
+										} )
+									} )
+									add( new javax.swing.tree.DefaultMutableTreeNode {
+										userObject: "projekt 3"
+										add( new javax.swing.tree.DefaultMutableTreeNode {
+											userObject: "nagranie 1"
+										} )
+										add( new javax.swing.tree.DefaultMutableTreeNode {
+											userObject: "nagranie 2"
+										} )
+										add( new javax.swing.tree.DefaultMutableTreeNode {
+											userObject: "nagranie 3"
+										} )
+									} )
+								} )
+								"rootVisible": false
+								auxiliary() {
+									"JavaCodeGenerator.variableGetter": true
+								}
+							} )
+						}, new FormLayoutConstraints( class java.lang.String ) {
+							"value": "Center"
+						} )
+						add( new FormComponent( "javax.swing.JButton" ) {
+							name: "addProject"
+							"text": "Dodaj projekt"
+							auxiliary() {
+								"JavaCodeGenerator.variableGetter": true
+							}
+						}, new FormLayoutConstraints( class java.lang.String ) {
+							"value": "Last"
+						} )
+					} )
+				}, new FormLayoutConstraints( class java.lang.String ) {
+					"value": "left"
+				} )
+				add( new FormContainer( "javax.swing.JSplitPane", new FormLayoutManager( class javax.swing.JSplitPane ) ) {
+					name: "rightSplitPane"
+					"dividerSize": 5
+					"dividerLocation": 300
+					add( new FormContainer( "javax.swing.JTabbedPane", new FormLayoutManager( class javax.swing.JTabbedPane ) ) {
+						name: "nagrano"
+						add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jgoodies.forms.layout.FormLayout ) {
+							"$columnSpecs": "growbutton, labelcompgap, growbutton"
+							"$rowSpecs": "default, default, default, linegap, default, linegap, bottom:default:grow"
+						} ) {
+							name: "panel1"
+							"border": &EmptyBorder0 new javax.swing.border.EmptyBorder( 5, 5, 5, 5 )
+							add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridBagLayout ) {
+								"$columnSpecs": "0:1.0, 0:1.0"
+								"$rowSpecs": "0, 0, 7, 0"
+								"$alignTop": true
+								"$alignLeft": true
+							} ) {
+								name: "panel2"
+								"border": new javax.swing.border.TitledBorder( "Kamera" )
+								add( new FormComponent( "javax.swing.JButton" ) {
+									name: "button4"
+									"text": "przybliz"
+								}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) )
+								add( new FormComponent( "javax.swing.JButton" ) {
+									name: "button6"
+									"text": "oddal"
+								}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+									"gridx": 1
+								} )
+								add( new FormComponent( "javax.swing.JButton" ) {
+									name: "zoomInAll"
+									"text": "przybliz całkiem"
+								}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+									"gridy": 1
+								} )
+								add( new FormComponent( "javax.swing.JButton" ) {
+									name: "zoomOutAll"
+									"text": "oddal całkiem"
+								}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+									"gridx": 1
+									"gridy": 1
+								} )
+								add( new FormComponent( "javax.swing.JButton" ) {
+									name: "stopZoom"
+									"text": "zatrzymaj"
+								}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+									"gridy": 2
+									"gridwidth": 2
+								} )
+								add( new FormComponent( "javax.swing.JLabel" ) {
+									name: "label26"
+									"text": "Natężenie światła"
+								}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+									"gridy": 3
+								} )
+								add( new FormComponent( "javax.swing.JSlider" ) {
+									name: "lightValue"
+									"maximum": 3
+									"value": 0
+									auxiliary() {
+										"JavaCodeGenerator.variableGetter": true
+									}
+								}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+									"gridy": 3
+									"gridx": 1
+								} )
+							}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+								"vAlign": sfield com.jgoodies.forms.layout.CellConstraints FILL
+								"gridWidth": 3
+							} )
+							add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridBagLayout ) {
+								"$columnSpecs": "0:1.0, 0, 0:1.0"
+								"$rowSpecs": "0, 0:1.0"
+								"$alignTop": true
+								"$alignLeft": true
+							} ) {
+								name: "panel3"
+								"border": new javax.swing.border.TitledBorder( "Silnik" )
+								add( new FormComponent( "javax.swing.JLabel" ) {
+									name: "label27"
+									"text": "Prędkość"
+								}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) )
+								add( new FormComponent( "javax.swing.JSlider" ) {
+									name: "speed"
+									"maximum": 20
+									"value": 10
+									auxiliary() {
+										"JavaCodeGenerator.variableGetter": true
+									}
+								}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+									"gridwidth": 2
+									"gridx": 1
+								} )
+								add( new FormComponent( "javax.swing.JButton" ) {
+									name: "callBackward"
+									"text": "Wstecz"
+									auxiliary() {
+										"JavaCodeGenerator.variableGetter": true
+									}
+								}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+									"gridy": 1
+								} )
+								add( new FormComponent( "javax.swing.JButton" ) {
+									name: "callStop"
+									"text": "zatrzymaj"
+									auxiliary() {
+										"JavaCodeGenerator.variableGetter": true
+									}
+								}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+									"gridx": 1
+									"gridy": 1
+								} )
+								add( new FormComponent( "javax.swing.JButton" ) {
+									name: "callForward"
+									"text": "Naprzód"
+									auxiliary() {
+										"JavaCodeGenerator.variableGetter": true
+									}
+								}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+									"gridy": 1
+									"gridx": 2
+								} )
+							}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+								"gridY": 2
+								"vAlign": sfield com.jgoodies.forms.layout.CellConstraints CENTER
+								"gridWidth": 3
+							} )
+							add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridBagLayout ) {
+								"$columnSpecs": "0:1.0, 0:1.0, 0:1.0"
+								"$rowSpecs": "0:1.0, 0:1.0, 0:1.0"
+								"$alignTop": true
+								"$alignLeft": true
+							} ) {
+								name: "panel4"
+								"border": new javax.swing.border.TitledBorder( "Oko kamery" )
+								add( new FormComponent( "javax.swing.JButton" ) {
+									name: "cameraUp"
+									"text": "Góra"
+									auxiliary() {
+										"JavaCodeGenerator.variableGetter": true
+									}
+								}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+									"gridx": 1
+								} )
+								add( new FormComponent( "javax.swing.JButton" ) {
+									name: "cameraLeft"
+									"text": "Lewo"
+									auxiliary() {
+										"JavaCodeGenerator.variableGetter": true
+									}
+								}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+									"gridy": 1
+								} )
+								add( new FormComponent( "javax.swing.JButton" ) {
+									name: "cameraReset"
+									"text": "Reset"
+									auxiliary() {
+										"JavaCodeGenerator.variableGetter": true
+									}
+								}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+									"gridx": 1
+									"gridy": 1
+								} )
+								add( new FormComponent( "javax.swing.JButton" ) {
+									name: "cameraRight"
+									"text": "Prawo"
+									auxiliary() {
+										"JavaCodeGenerator.variableGetter": true
+									}
+								}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+									"gridx": 2
+									"gridy": 1
+								} )
+								add( new FormComponent( "javax.swing.JButton" ) {
+									name: "cameraDown"
+									"text": "Dół"
+									auxiliary() {
+										"JavaCodeGenerator.variableGetter": true
+									}
+								}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+									"gridy": 2
+									"gridx": 1
+								} )
+							}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+								"gridY": 3
+								"vAlign": sfield com.jgoodies.forms.layout.CellConstraints CENTER
+								"gridWidth": 3
+							} )
+							add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jgoodies.forms.layout.FormLayout ) {
+								"$columnSpecs": "default:grow, labelcompgap, default:grow, labelcompgap, default"
+								"$rowSpecs": "default, linegap, default"
+							} ) {
+								name: "panel6"
+								"border": new javax.swing.border.TitledBorder( "Zarządzaj nagrywaniem" )
+								add( new FormComponent( "javax.swing.JButton" ) {
+									name: "startRecord"
+									"text": "nagrywaj"
+								}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) )
+								add( new FormComponent( "javax.swing.JButton" ) {
+									name: "stopRecord"
+									"text": "zatrzymaj"
+								}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+									"gridX": 3
+								} )
+								add( new FormComponent( "javax.swing.JTextField" ) {
+									name: "currentRecordTime"
+									"horizontalAlignment": 2
+									"text": "1"
+									"enabled": false
+									"background": new java.awt.Color( 255, 255, 255, 255 )
+									auxiliary() {
+										"JavaCodeGenerator.variableGetter": true
+									}
+								}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+									"gridX": 5
+								} )
+								add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jgoodies.forms.layout.FormLayout ) {
+									"$columnSpecs": "default:grow, labelcompgap, 95dlu:grow, labelcompgap, default:grow"
+									"$rowSpecs": "default, linegap, default"
+								} ) {
+									name: "addEventsPanel"
+									"border": new javax.swing.border.TitledBorder( null, "Dodaj zdarzenie", 0, 0 )
+									auxiliary() {
+										"JavaCodeGenerator.variableGetter": true
+									}
+									add( new FormComponent( "javax.swing.JTextPane" ) {
+										name: "textEvent"
+										"cursor": new java.awt.Cursor( 2 )
+										auxiliary() {
+											"JavaCodeGenerator.variableGetter": true
+										}
+									}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+										"vAlign": sfield com.jgoodies.forms.layout.CellConstraints FILL
+										"gridWidth": 4
+									} )
+									add( new FormComponent( "javax.swing.JButton" ) {
+										name: "addEvent"
+										"text": "Dodaj"
+									}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+										"vAlign": sfield com.jgoodies.forms.layout.CellConstraints TOP
+										"gridX": 5
+									} )
+									add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+										name: "scrollPane2"
+										add( new FormComponent( "javax.swing.JTextArea" ) {
+											name: "eventsList"
+											"enabled": false
+											"lineWrap": true
+											auxiliary() {
+												"JavaCodeGenerator.variableGetter": true
+											}
+										} )
+									}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+										"gridY": 3
+										"gridWidth": 5
+									} )
+								}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+									"gridY": 3
+									"gridWidth": 5
+								} )
+							}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+								"gridX": 1
+								"gridY": 5
+								"gridWidth": 3
+							} )
+							add( new FormComponent( "javax.swing.JButton" ) {
+								name: "close"
+								"text": "Zamknij"
+								auxiliary() {
+									"JavaCodeGenerator.variableGetter": true
+								}
+							}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+								"gridX": 1
+								"gridY": 7
+							} )
+							add( new FormComponent( "javax.swing.JButton" ) {
+								name: "preview"
+								"text": "Podgląg projektu"
+								auxiliary() {
+									"JavaCodeGenerator.variableGetter": true
+								}
+							}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+								"gridY": 7
+								"gridX": 3
+							} )
+						}, new FormLayoutConstraints( null ) {
+							"title": "Sterowanie i Nagrywanie"
+						} )
+						add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+							name: "scrollPane1"
+							"border": #EmptyBorder0
+							add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jgoodies.forms.layout.FormLayout ) {
+								"$columnSpecs": "default:grow, default:grow"
+								"$rowSpecs": "14dlu, min, min, min, 14dlu, min, min, default, default, default, 14dlu, min, min, default, default, default, 14dlu, min, min, min, min, min, min, min, min, linegap, default"
+							} ) {
+								name: "info"
+								add( new FormComponent( "javax.swing.JLabel" ) {
+									name: "label19"
+									"text": "Ogólne"
+								}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+									"gridWidth": 2
+								} )
+								add( new FormComponent( "javax.swing.JLabel" ) {
+									name: "label2"
+									"text": "Nazwa firmy"
+								}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+									"gridX": 1
+									"gridY": 2
+								} )
+								add( new FormComponent( "javax.swing.JTextField" ) {
+									name: "nazwaFirmy"
+									"toolTipText": "nazwaFirmy"
+									"name": "nazwaFirmy"
+								}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+									"gridX": 2
+									"gridY": 2
+								} )
+								add( new FormComponent( "javax.swing.JLabel" ) {
+									name: "label3"
+									"text": "Numer odcinka"
+								}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+									"gridX": 1
+									"gridY": 3
+								} )
+								add( new FormComponent( "javax.swing.JTextField" ) {
+									name: "numerOdcinka"
+									"toolTipText": "numerOdcinka"
+									"name": "numerOdcinka"
+								}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+									"gridX": 2
+									"gridY": 3
+								} )
+								add( new FormComponent( "javax.swing.JLabel" ) {
+									name: "label8"
+									"text": "Miasto"
+								}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+									"gridY": 4
+								} )
+								add( new FormComponent( "javax.swing.JTextField" ) {
+									name: "miasto"
+									"toolTipText": "miasto"
+									"name": "miasto"
+								}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+									"gridX": 2
+									"gridY": 4
+								} )
+								add( new FormComponent( "javax.swing.JLabel" ) {
+									name: "label18"
+									"text": "Studnia początkowa"
+								}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+									"gridY": 5
+									"gridWidth": 2
+								} )
+								add( new FormComponent( "javax.swing.JLabel" ) {
+									name: "label5"
+									"text": "Symbol studni"
+								}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+									"gridY": 6
+								} )
+								add( new FormComponent( "javax.swing.JTextField" ) {
+									name: "symbolStudni"
+									"toolTipText": "poczatkowaSymbolStudni"
+									"name": "poczatkowaSymbolStudni"
+								}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+									"gridX": 2
+									"gridY": 6
+								} )
+								add( new FormComponent( "javax.swing.JLabel" ) {
+									name: "label4"
+									"text": "Ulica poczatkowa"
+								}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+									"gridY": 7
+								} )
+								add( new FormComponent( "javax.swing.JTextField" ) {
+									name: "textField3"
+									"toolTipText": "poczatkowaUlica"
+									"name": "poczatkowaUlica"
+								}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+									"gridX": 2
+									"gridY": 7
+								} )
+								add( new FormComponent( "javax.swing.JLabel" ) {
+									name: "label23"
+									"text": "Rzędna kinety (m)"
+								}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+									"gridX": 1
+									"gridY": 8
+								} )
+								add( new FormComponent( "javax.swing.JSpinner" ) {
+									name: "spinner4"
+									"toolTipText": "poczatkowaRzednaKinety"
+									"model": &SpinnerNumberModel0 new javax.swing.SpinnerNumberModel {
+										minimum: 0
+									}
+									"name": "poczatkowaRzednaKinety"
+								}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+									"gridX": 2
+									"gridY": 8
+								} )
+								add( new FormComponent( "javax.swing.JLabel" ) {
+									name: "label24"
+									"text": "Rozmiar (mm)"
+								}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+									"gridX": 1
+									"gridY": 9
+								} )
+								add( new FormComponent( "javax.swing.JSpinner" ) {
+									name: "spinner5"
+									"toolTipText": "mm"
+									"model": &SpinnerNumberModel1 new javax.swing.SpinnerNumberModel {
+										minimum: 0
+									}
+									"name": "poczatkowaRozmiar"
+								}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+									"gridY": 9
+									"gridX": 2
+								} )
+								add( new FormComponent( "javax.swing.JLabel" ) {
+									name: "label25"
+									"text": "Zgłębienie (m)"
+								}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+									"gridX": 1
+									"gridY": 10
+								} )
+								add( new FormComponent( "javax.swing.JSpinner" ) {
+									name: "spinner6"
+									"toolTipText": "m"
+									"model": #SpinnerNumberModel0
+									"name": "poczatkowaZaglebienie"
+								}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+									"gridY": 10
+									"gridX": 2
+								} )
+								add( new FormComponent( "javax.swing.JLabel" ) {
+									name: "label20"
+									"text": "Studnia końcowa"
+								}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+									"gridY": 11
+									"gridWidth": 2
+								} )
+								add( new FormComponent( "javax.swing.JLabel" ) {
+									name: "label7"
+									"text": "Symbol studni"
+								}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+									"gridY": 12
+								} )
+								add( new FormComponent( "javax.swing.JTextField" ) {
+									name: "textField6"
+									"name": "koncowaSymbolStudni"
+								}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+									"gridX": 2
+									"gridY": 12
+								} )
+								add( new FormComponent( "javax.swing.JLabel" ) {
+									name: "label6"
+									"text": "Ulica końcowa"
+								}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+									"gridX": 1
+									"gridY": 13
+								} )
+								add( new FormComponent( "javax.swing.JTextField" ) {
+									name: "textField5"
+									"name": "koncowaUlica"
+								}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+									"gridX": 2
+									"gridY": 13
+								} )
+								add( new FormComponent( "javax.swing.JLabel" ) {
+									name: "label15"
+									"text": "Rzędna kinety (m)"
+								}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+									"gridY": 14
+								} )
+								add( new FormComponent( "javax.swing.JSpinner" ) {
+									name: "spinner1"
+									"toolTipText": "m"
+									"model": #SpinnerNumberModel0
+									"name": "koncowaRzednaKinety"
+								}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+									"gridX": 2
+									"gridY": 14
+								} )
+								add( new FormComponent( "javax.swing.JLabel" ) {
+									name: "label21"
+									"text": "Rozmiar (mm)"
+								}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+									"gridX": 1
+									"gridY": 15
+								} )
+								add( new FormComponent( "javax.swing.JSpinner" ) {
+									name: "spinner2"
+									"toolTipText": "mm"
+									"model": #SpinnerNumberModel1
+									"name": "koncowaRozmiar"
+								}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+									"gridX": 2
+									"gridY": 15
+								} )
+								add( new FormComponent( "javax.swing.JLabel" ) {
+									name: "label22"
+									"text": "Zagłębienie (m)"
+								}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+									"gridX": 1
+									"gridY": 16
+								} )
+								add( new FormComponent( "javax.swing.JSpinner" ) {
+									name: "spinner3"
+									"toolTipText": "m"
+									"model": new javax.swing.SpinnerNumberModel {
+										minimum: 0
+									}
+									"name": "koncowaZaglebienie"
+								}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+									"gridX": 2
+									"gridY": 16
+								} )
+								add( new FormComponent( "javax.swing.JLabel" ) {
+									name: "label11"
+									"text": "Opis kanału"
+								}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+									"gridX": 1
+									"gridY": 17
+								} )
+								add( new FormComponent( "javax.swing.JLabel" ) {
+									name: "label17"
+									"text": "Rodzaj inspekcji"
+								}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+									"gridX": 1
+									"gridY": 18
+								} )
+								add( new FormComponent( "javax.swing.JComboBox" ) {
+									name: "inspekcja"
+									"model": new javax.swing.DefaultComboBoxModel {
+										selectedItem: "Inspekcja"
+										addElement( "Inspekcja" )
+									}
+									"name": "inspekcja"
+								}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+									"gridX": 2
+									"gridY": 18
+								} )
+								add( new FormComponent( "javax.swing.JLabel" ) {
+									name: "label9"
+									"text": "Materiał "
+								}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+									"gridX": 1
+									"gridY": 19
+								} )
+								add( new FormComponent( "javax.swing.JComboBox" ) {
+									name: "material"
+									"model": new javax.swing.DefaultComboBoxModel {
+										selectedItem: "Beton"
+										addElement( "Beton" )
+										addElement( "Plastik" )
+										addElement( "Stal" )
+									}
+									"name": "material"
+								}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+									"gridX": 2
+									"gridY": 19
+								} )
+								add( new FormComponent( "javax.swing.JLabel" ) {
+									name: "label10"
+									"text": "Rozmiar rury"
+								}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+									"gridX": 1
+									"gridY": 20
+								} )
+								add( new FormComponent( "javax.swing.JComboBox" ) {
+									name: "rozmiarRury"
+									"model": new javax.swing.DefaultComboBoxModel {
+										selectedItem: "100"
+										addElement( "100" )
+										addElement( "200" )
+										addElement( "300" )
+										addElement( "400" )
+										addElement( "500" )
+										addElement( "600" )
+										addElement( "700" )
+										addElement( "800" )
+										addElement( "900" )
+										addElement( "1000" )
+										addElement( "1100" )
+									}
+									"name": "rozmiarRury"
+								}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+									"gridX": 2
+									"gridY": 20
+								} )
+								add( new FormComponent( "javax.swing.JLabel" ) {
+									name: "label12"
+									"text": "Przekroj"
+								}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+									"gridX": 1
+									"gridY": 21
+								} )
+								add( new FormComponent( "javax.swing.JComboBox" ) {
+									name: "przrekroj"
+									"model": new javax.swing.DefaultComboBoxModel {
+										selectedItem: "Kołowy"
+										addElement( "Kołowy" )
+										addElement( "Trójkątny" )
+										addElement( "Kwadratowy" )
+									}
+									"name": "przekroj"
+								}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+									"gridX": 2
+									"gridY": 21
+								} )
+								add( new FormComponent( "javax.swing.JLabel" ) {
+									name: "label13"
+									"text": "Kierunek jazdy"
+								}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+									"gridX": 1
+									"gridY": 22
+								} )
+								add( new FormComponent( "javax.swing.JComboBox" ) {
+									name: "kierunekJazdy"
+									"model": new javax.swing.DefaultComboBoxModel {
+										selectedItem: "Pod prąd"
+										addElement( "Pod prąd" )
+										addElement( "Z prądem" )
+									}
+									"name": "kierunekJazdy"
+								}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+									"gridX": 2
+									"gridY": 22
+								} )
+								add( new FormComponent( "javax.swing.JLabel" ) {
+									name: "label14"
+									"text": "Typ studni"
+								}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+									"gridX": 1
+									"gridY": 23
+								} )
+								add( new FormComponent( "javax.swing.JComboBox" ) {
+									name: "typStudni"
+									"model": new javax.swing.DefaultComboBoxModel {
+										selectedItem: "Początkowa"
+										addElement( "Początkowa" )
+										addElement( "Końcowa" )
+									}
+									"name": "typStudni"
+								}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+									"gridX": 2
+									"gridY": 23
+								} )
+								add( new FormComponent( "javax.swing.JLabel" ) {
+									name: "label16"
+									"text": "Typ instalacji"
+								}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+									"gridX": 1
+									"gridY": 24
+								} )
+								add( new FormComponent( "javax.swing.JComboBox" ) {
+									name: "typInstalacji"
+									"model": new javax.swing.DefaultComboBoxModel {
+										selectedItem: "Deszczowa"
+										addElement( "Deszczowa" )
+										addElement( "Sanitarna" )
+									}
+									"name": "typInstalacji"
+								}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+									"gridX": 2
+									"gridY": 24
+								} )
+							} )
+						}, new FormLayoutConstraints( null ) {
+							"title": "Informacje"
+						} )
+					}, new FormLayoutConstraints( class java.lang.String ) {
+						"value": "left"
+					} )
+					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.CardLayout ) ) {
+						name: "cameraParent"
+						"opaque": false
+						auxiliary() {
+							"JavaCodeGenerator.variableGetter": true
+						}
+						add( new FormContainer( "javax.swing.JLayeredPane", new FormLayoutManager( class javax.swing.JLayeredPane ) ) {
+							name: "layeredPane1"
+							"background": new java.awt.Color( 0, 0, 0, 255 )
+							addEvent( new FormEvent( "java.awt.event.ComponentListener", "componentResized", "layeredPane1ComponentResized", true ) )
+							add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.FlowLayout ) ) {
+								name: "aboveCamera"
+								"background": sfield java.awt.Color white
+								auxiliary() {
+									"JavaCodeGenerator.variableGetter": true
+								}
+								add( new FormComponent( "javax.swing.JTextPane" ) {
+									name: "textAboveCamera"
+									"text": "0.00%"
+									"font": new java.awt.Font( "Tahoma", 0, 20 )
+									"foreground": sfield java.awt.Color black
+									"background": sfield java.awt.Color white
+									"editable": false
+									auxiliary() {
+										"JavaCodeGenerator.variableGetter": true
+									}
+								} )
+							}, new FormLayoutConstraints( null ) {
+								"width": 80
+								"height": 40
+								"x": 10
+								"y": 10
+							} )
+							add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.FlowLayout ) ) {
+								name: "aboveCamera2"
+								"background": sfield java.awt.Color white
+								auxiliary() {
+									"JavaCodeGenerator.variableGetter": true
+								}
+								add( new FormComponent( "javax.swing.JTextPane" ) {
+									name: "distance"
+									"text": "0.00 m"
+									"font": new java.awt.Font( "Tahoma", 0, 20 )
+									"background": sfield java.awt.Color white
+									"editable": false
+									auxiliary() {
+										"JavaCodeGenerator.variableGetter": true
+									}
+								} )
+							}, new FormLayoutConstraints( null ) {
+								"width": 80
+								"height": 40
+								"y": 10
+								"x": 200
+							} )
+							add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridLayout ) ) {
+								name: "camera"
+								"minimumSize": new java.awt.Dimension( 16, 9 )
+								"maximumSize": new java.awt.Dimension( 1600, 900 )
+								"preferredSize": new java.awt.Dimension( 520, 495 )
+								"background": new java.awt.Color( 0, 0, 0, 255 )
+							}, new FormLayoutConstraints( null ) {
+								"width": 525
+								"height": 645
+								"x": 5
+								"y": 0
+							} )
+						}, new FormLayoutConstraints( class java.lang.String ) {
+							"value": "card4"
+						} )
+					}, new FormLayoutConstraints( class java.lang.String ) {
+						"value": "right"
+					} )
+				}, new FormLayoutConstraints( class java.lang.String ) {
+					"value": "right"
+				} )
+			} )
+			menuBar: new FormContainer( "javax.swing.JMenuBar", new FormLayoutManager( class javax.swing.JMenuBar ) ) {
+				name: "menuBar1"
+				add( new FormContainer( "javax.swing.JMenu", new FormLayoutManager( class javax.swing.JMenu ) ) {
+					name: "menuProject"
+					"text": "Projekt"
+					auxiliary() {
+						"JavaCodeGenerator.variableGetter": true
+					}
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "openProjectList"
+						"text": "Zamknij"
+						auxiliary() {
+							"JavaCodeGenerator.variableGetter": true
+						}
+					} )
+					add( new FormContainer( "javax.swing.JMenu", new FormLayoutManager( class javax.swing.JMenu ) ) {
+						name: "menu3"
+						"text": "Edytuj"
+						add( new FormComponent( "javax.swing.JMenuItem" ) {
+							name: "editProject"
+							"text": "Projekt"
+							auxiliary() {
+								"JavaCodeGenerator.variableGetter": true
+							}
+						} )
+						add( new FormComponent( "javax.swing.JMenuItem" ) {
+							name: "editData"
+							"text": "Dane"
+							auxiliary() {
+								"JavaCodeGenerator.variableGetter": true
+							}
+						} )
+					} )
+				} )
+				add( new FormContainer( "javax.swing.JMenu", new FormLayoutManager( class javax.swing.JMenu ) ) {
+					name: "menu2"
+					"text": "Opcje"
+					add( new FormContainer( "javax.swing.JMenu", new FormLayoutManager( class javax.swing.JMenu ) ) {
+						name: "menu1"
+						"text": "Kamera"
+						add( new FormComponent( "javax.swing.JMenuItem" ) {
+							name: "refreshCameraPreview"
+							"text": "Odśwież połączenie"
+							auxiliary() {
+								"JavaCodeGenerator.variableGetter": true
+							}
+						} )
+					} )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "cameraData"
+						"text": "Dane środowiskowe"
+						auxiliary() {
+							"JavaCodeGenerator.variableGetter": true
+						}
+					} )
+				} )
+			}
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 50, 35 )
+			"size": new java.awt.Dimension( 1090, 710 )
+		} )
+	}
+}

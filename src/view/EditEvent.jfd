@@ -1,0 +1,302 @@
+JFDML JFormDesigner: "5.1.3.0.158" Java: "1.8.0_51" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class javax.swing.BoxLayout ) {
+			"axis": 1
+		} ) {
+			name: "this"
+			"$sizePolicy": 1
+			"$locationPolicy": 0
+			"visible": true
+			"alwaysOnTop": true
+			"title": "Edytuj zdarzenie"
+			auxiliary() {
+				"JavaCodeGenerator.variableGetter": true
+			}
+			add( new FormComponent( "javax.swing.JSeparator" ) {
+				name: "separator4"
+			} )
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane2"
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class javax.swing.BoxLayout ) {
+					"axis": 1
+				} ) {
+					name: "panel"
+					"name": "test"
+					auxiliary() {
+						"JavaCodeGenerator.variableGetter": true
+					}
+					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jgoodies.forms.layout.FormLayout ) {
+						"$columnSpecs": "93dlu, labelcompgap, default:grow"
+						"$rowSpecs": "default, linegap, default, linegap, default, linegap, default, linegap, default, linegap, default, linegap, default, linegap, default, linegap, default, linegap, 68dlu, linegap, default:grow"
+					} ) {
+						name: "panel3"
+						"border": &EmptyBorder0 new javax.swing.border.EmptyBorder( 5, 5, 5, 5 )
+						"name": "test"
+						auxiliary() {
+							"JavaCodeGenerator.variableGetter": true
+						}
+						add( new FormComponent( "com.jformdesigner.designer.wrapper.JGoodiesFormsSeparator" ) {
+							name: "separator1"
+							"text": "Wybierz typ zdarzenia"
+						}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+							"gridX": 1
+							"gridY": 1
+						} )
+						add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class javax.swing.BoxLayout ) ) {
+							name: "panel1"
+							"border": #EmptyBorder0
+							add( new FormComponent( "com.jformdesigner.designer.wrapper.HSpacer" ) {
+								name: "hSpacer6"
+							} )
+							add( new FormComponent( "javax.swing.JRadioButton" ) {
+								name: "radioButton1"
+								"text": "Rurociąg"
+								"$buttonGroup": new FormReference( "buttonGroup1" )
+								"name": "rurociag"
+								auxiliary() {
+									"JavaCodeGenerator.variableGetter": true
+								}
+							} )
+							add( new FormComponent( "com.jformdesigner.designer.wrapper.HSpacer" ) {
+								name: "hSpacer1"
+							} )
+							add( new FormComponent( "javax.swing.JRadioButton" ) {
+								name: "radioButton2"
+								"text": "Studzienka"
+								"$buttonGroup": new FormReference( "buttonGroup1" )
+								"name": "studzienka"
+								auxiliary() {
+									"JavaCodeGenerator.variableGetter": true
+								}
+							} )
+							add( new FormComponent( "com.jformdesigner.designer.wrapper.HSpacer" ) {
+								name: "hSpacer3"
+							} )
+							add( new FormComponent( "javax.swing.JRadioButton" ) {
+								name: "radioButton3"
+								"text": "Inwentaryzacja"
+								"$buttonGroup": new FormReference( "buttonGroup1" )
+								"name": "inwentaryzacja"
+								auxiliary() {
+									"JavaCodeGenerator.variableGetter": true
+								}
+							} )
+							add( new FormComponent( "com.jformdesigner.designer.wrapper.HSpacer" ) {
+								name: "hSpacer4"
+							} )
+							add( new FormComponent( "javax.swing.JRadioButton" ) {
+								name: "radioButton4"
+								"text": "Inne"
+								"$buttonGroup": new FormReference( "buttonGroup1" )
+								"name": "inne"
+								auxiliary() {
+									"JavaCodeGenerator.variableGetter": true
+								}
+							} )
+							add( new FormComponent( "com.jformdesigner.designer.wrapper.HSpacer" ) {
+								name: "hSpacer5"
+							} )
+						}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+							"gridX": 3
+						} )
+						add( new FormComponent( "javax.swing.JButton" ) {
+							name: "selectEvent"
+							"text": "Wybierz opis zdarzenia"
+							auxiliary() {
+								"JavaCodeGenerator.variableGetter": true
+							}
+						}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+							"gridWidth": 3
+							"gridY": 3
+						} )
+						add( new FormComponent( "javax.swing.JTextField" ) {
+							name: "opis1"
+							"horizontalAlignment": 0
+							"preferredSize": new java.awt.Dimension( 139, 26 )
+							"visible": false
+							"name": "opis1"
+							auxiliary() {
+								"JavaCodeGenerator.variableGetter": true
+							}
+						}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+							"gridY": 5
+							"vAlign": sfield com.jgoodies.forms.layout.CellConstraints CENTER
+							"gridWidth": 3
+						} )
+						add( new FormComponent( "javax.swing.JTextField" ) {
+							name: "opis2"
+							"horizontalAlignment": 0
+							"preferredSize": new java.awt.Dimension( 139, 26 )
+							"visible": false
+							"name": "opis2"
+							auxiliary() {
+								"JavaCodeGenerator.variableGetter": true
+							}
+						}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+							"gridY": 7
+							"vAlign": sfield com.jgoodies.forms.layout.CellConstraints CENTER
+							"gridWidth": 3
+						} )
+						add( new FormComponent( "javax.swing.JTextField" ) {
+							name: "opis3"
+							"horizontalAlignment": 0
+							"preferredSize": new java.awt.Dimension( 139, 26 )
+							"visible": false
+							"name": "opis3"
+							auxiliary() {
+								"JavaCodeGenerator.variableGetter": true
+							}
+						}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+							"gridY": 9
+							"vAlign": sfield com.jgoodies.forms.layout.CellConstraints CENTER
+							"gridWidth": 3
+						} )
+						add( new FormComponent( "com.jformdesigner.designer.wrapper.JGoodiesFormsSeparator" ) {
+							name: "separator2"
+							"text": "Opisz zdarzenie"
+						}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+							"gridY": 11
+							"gridWidth": 3
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label1"
+							"text": "Ujęcie ilościowe"
+						}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+							"gridY": 13
+						} )
+						add( new FormComponent( "javax.swing.JTextField" ) {
+							name: "ilosc"
+							"name": "ilosc"
+						}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+							"gridY": 13
+							"gridX": 3
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label2"
+							"text": "Dodatkowe uwagi"
+						}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+							"gridY": 15
+						} )
+						add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+							name: "panel6"
+							"preferredSize": new java.awt.Dimension( 120, 120 )
+							"maximumSize": new java.awt.Dimension( 120, 120 )
+							"minimumSize": new java.awt.Dimension( 120, 120 )
+							auxiliary() {
+								"JavaCodeGenerator.variableGetter": true
+							}
+						}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+							"gridY": 19
+							"hAlign": sfield com.jgoodies.forms.layout.CellConstraints CENTER
+							"vAlign": sfield com.jgoodies.forms.layout.CellConstraints CENTER
+						} )
+						add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+							name: "scrollPane1"
+							"preferredSize": new java.awt.Dimension( 250, 48 )
+							add( new FormComponent( "javax.swing.JTextArea" ) {
+								name: "uwagi"
+								"minimumSize": new java.awt.Dimension( 250, 16 )
+								"name": "uwagi"
+								"font": new java.awt.Font( "Segoe UI", 0, 14 )
+							} )
+						}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+							"gridX": 3
+							"gridY": 15
+						} )
+						add( new FormComponent( "com.jformdesigner.designer.wrapper.JGoodiesFormsSeparator" ) {
+							name: "separator3"
+							"text": "Lokalizacja zdarzenia"
+						}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+							"gridY": 17
+							"gridWidth": 3
+						} )
+						add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class javax.swing.BoxLayout ) {
+							"axis": 1
+						} ) {
+							name: "panel7"
+							"alignmentX": 0.0f
+							"name": "test2"
+							add( new FormComponent( "javax.swing.JLabel" ) {
+								name: "label3"
+								"text": "Szerokość"
+							} )
+							add( new FormComponent( "javax.swing.JSlider" ) {
+								name: "szerokosc"
+								"maximum": 360
+								"value": 90
+								"name": "szerokosc"
+								auxiliary() {
+									"JavaCodeGenerator.variableGetter": true
+								}
+							} )
+							add( new FormComponent( "javax.swing.JLabel" ) {
+								name: "label4"
+								"text": "Przesunięcie"
+							} )
+							add( new FormComponent( "javax.swing.JSlider" ) {
+								name: "przesuniecie"
+								"maximum": 360
+								"value": 0
+								"name": "przesuniecie"
+								auxiliary() {
+									"JavaCodeGenerator.variableGetter": true
+								}
+							} )
+						}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+							"gridY": 21
+							"vAlign": sfield com.jgoodies.forms.layout.CellConstraints TOP
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "zdjecie"
+							"icon": new com.jformdesigner.model.SwingIcon( 1, "C:\\Users\\TheKing\\Desktop\\tozadizalacmusi\\2016-04-06 12_05_44-Wiadomości.png" )
+							"horizontalAlignment": 0
+							"name": "zdjecie"
+							"toolTipText": "C:\\Users\\TheKing\\Videos\\Projekt testowy2\\Nagranie 2016-03-06 17-33-chart.jpg"
+							auxiliary() {
+								"JavaCodeGenerator.variableGetter": true
+							}
+						}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+							"gridY": 19
+							"gridX": 3
+							"gridHeight": 3
+						} )
+					} )
+				} )
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class javax.swing.BoxLayout ) {
+				"axis": 0
+			} ) {
+				name: "panel4"
+				"border": #EmptyBorder0
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "cancel"
+					"text": "Anuluj"
+					auxiliary() {
+						"JavaCodeGenerator.variableGetter": true
+					}
+				} )
+				add( new FormComponent( "com.jformdesigner.designer.wrapper.HSpacer" ) {
+					name: "hSpacer2"
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "save"
+					"text": "Zapisz"
+					auxiliary() {
+						"JavaCodeGenerator.variableGetter": true
+					}
+				} )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 120, 10 )
+			"size": new java.awt.Dimension( 865, 710 )
+		} )
+		add( new FormNonVisual( "javax.swing.ButtonGroup" ) {
+			name: "buttonGroup1"
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 625 )
+		} )
+	}
+}

@@ -1,0 +1,3 @@
+ffmpeg -y -i test.mp4 -preset ultrafast test2.mp4
+del test.mp4
+rename test2.mp4 test.mp4
