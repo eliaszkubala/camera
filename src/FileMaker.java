@@ -154,7 +154,7 @@ public class FileMaker {
             if (seconds % 1 == 0) {
                 // co %X sekundy pobieram sobie gyro
                 //RS485_Reader.getInstance().write("getGyro()");
-                RS485_Reader.getInstance().setListner(FileMaker.this);
+                RS485_Reader.getInstance().setListener(FileMaker.this);
             }
         }
     }

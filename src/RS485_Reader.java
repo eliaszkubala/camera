@@ -18,9 +18,10 @@ import java.util.Enumeration;
 public class RS485_Reader implements SerialPortEventListener {
 
     private static RS485_Reader instance;
-    public FileMaker listner;
-    public CameraPreviewMain mainListner;
+    public FileMaker listener;
+    public CameraPreviewMain mainListener;
     private String DISTANCE_DATA;
+    private boolean CONNECTED_STATUS;
 
     public float getGYROSCOPE_DEGREE_DATA() {
         return GYROSCOPE_DEGREE_DATA;
@@ -38,8 +39,6 @@ public class RS485_Reader implements SerialPortEventListener {
         return CONNECTED_STATUS;
     }
 
-    private boolean CONNECTED_STATUS;
-
     public String getHUMI_DATA() {
         return HUMI_DATA;
     }
@@ -50,6 +49,10 @@ public class RS485_Reader implements SerialPortEventListener {
 
     public String getGYROSCOPE_DATA() {
         return GYROSCOPE_DATA;
+    }
+
+    public String getDISTANCE_DATA() {
+        return DISTANCE_DATA;
     }
 
     private String TEMP_DATA;
@@ -224,12 +227,14 @@ public class RS485_Reader implements SerialPortEventListener {
                     GYROSCOPE_DATA = y;
                 }
 
-                if (RS485_Reader.getInstance().listner != null)
-                    RS485_Reader.getInstance().listner.serialEvent(inputLine);
+                if (RS485_Reader.getInstance().listener != null)
+                    RS485_Reader.getInstance().listener.serialEvent(inputLine);
 
-                if (RS485_Reader.getInstance().mainListner != null) {
-                    mainListner.serialEvents(inputLine);
+                if (RS485_Reader.getInstance().mainListener != null) {
+                    mainListener.serialEvents(inputLine);
                 }
+
+                CONNECTED_STATUS = true;
             } catch (Exception e) {
                 System.err.println(e.toString());
             }
@@ -253,15 +258,11 @@ public class RS485_Reader implements SerialPortEventListener {
         System.out.println("Started");
     }
 
-    public void setListner(FileMaker listner) {
-        this.listner = listner;
+    public void setListener(FileMaker listener) {
+        this.listener = listener;
     }
 
-    public void setMainListner(CameraPreviewMain listner) {
-        this.mainListner = listner;
-    }
-
-    public String getDISTANCE_DATA() {
-        return DISTANCE_DATA;
+    public void setMainListener(CameraPreviewMain listner) {
+        this.mainListener = listner;
     }
 }

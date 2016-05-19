@@ -5,7 +5,6 @@ import javax.swing.event.ChangeListener;
 import utility.CameraMethod;
 import utility.GlobalData;
 import utility.fixMP4;
-import view.CameraPreview;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -19,7 +18,7 @@ public class CameraPreviewMain extends CameraRecord {
         getGUI();
         configuareGUIListeners();
         RS485_Reader.getInstance();
-        RS485_Reader.getInstance().setMainListner(this);
+        RS485_Reader.getInstance().setMainListener(this);
         new Project(getGUI());
 
         Project.getInstance().reloadProjectTree();
